@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa 1</title>
+</head>
+
+<body>
+    <p>
+        Enter a number between 1-9:
+        <input type="text" name="number1" id="num">
+    </p>
+    <hr>
+    <button type="button" onclick="donustur()"> CONVERT</button>
+    <p id="sonuc"></p>
+
+    <script>
+        function donustur() {
+            var sayi = parseInt(document.getElementById('num').value);
+
+
+            switch (sayi) {
+                case 1: document.getElementById('sonuc').innerHTML = "I";
+                    break;
+                case 2: document.getElementById('sonuc').innerHTML = "II";
+                    break;
+                case 3: document.getElementById('sonuc').innerHTML = "III";
+                    break;
+                case 4: document.getElementById('sonuc').innerHTML = "IV";
+                    break;
+                case 5: document.getElementById('sonuc').innerHTML = "V";
+                    break;
+                case 6: document.getElementById('sonuc').innerHTML = "VI";
+                    break;
+                case 7: document.getElementById('sonuc').innerHTML = "VII";
+                    break;
+                case 8: document.getElementById('sonuc').innerHTML = "VIII";
+                    break;
+                case 9: document.getElementById('sonuc').innerHTML = "IX";
+                    break;
+                default:
+                    alert("Lütfen 1-9 arası sayı gir")
+                    break;
+
+            }
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
